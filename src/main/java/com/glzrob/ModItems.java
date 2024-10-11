@@ -16,6 +16,11 @@ public class ModItems {
         "suspicious_substance"
     );
 
+    public static final Item SUSPICIOUS_MINERAL = register(
+        new Item(new Item.Settings()),
+        "suspicious_mineral"
+    );
+
     // --------------------  END ITEM REGISTRIES  --------------------
 
     /**
@@ -26,6 +31,9 @@ public class ModItems {
         // And register an event handler that adds our suspicious item to the ingredients group
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
             .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_SUBSTANCE));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+            .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_MINERAL));
     }
 
     /**

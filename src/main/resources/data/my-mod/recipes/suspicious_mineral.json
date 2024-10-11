@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "my-mod:suspicious_substance"
+        }
+    },
+    "result": {
+        "id": "my-mod:suspicious_mineral",
+        "count": 1
+    }
+
+}
