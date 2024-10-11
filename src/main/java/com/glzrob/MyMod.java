@@ -20,6 +20,7 @@ public class MyMod implements ModInitializer {
         // Proceed with mild caution.
 
         ModItems.initialize();
+        ModBlocks.initialize();
 
     }
 }
